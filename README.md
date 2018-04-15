@@ -17,4 +17,7 @@ $ sh ./link.sh
 
 ## Initialize
 
-coming soon...
+```
+$ cd dotfiles
+$ sh ./install.sh
+```
