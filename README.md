@@ -2,19 +2,19 @@
 
 OS X / Ubuntu dotfiles.
 
-# Installation
+## Installation
 
 ```
 $ git clone https://github.com/nakabonne/dotfiles.git
 ```
 
-# deploy
+## deploy
 
 ```
 $ cd dotfiles
 $ sh ./link.sh
 ```
 
-# Initialize
+## Initialize
 
 coming soon...
