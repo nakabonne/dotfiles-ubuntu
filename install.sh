@@ -20,6 +20,7 @@ fi
 if type "go"; then
   echo "$(tput setaf 2)Already installed Go ✔︎$(tput sgr0)"
 else
+  echo "Installing Go..."
   brew install go
 fi
 if type "go"; then
@@ -31,6 +32,7 @@ fi
 if type "ghq"; then
   echo "$(tput setaf 2)Already installed ghq ✔︎$(tput sgr0)"
 else
+  echo "Installing ghq..."
   go get github.com/motemen/ghq
 fi
 if type "ghq"; then
@@ -42,6 +44,7 @@ fi
 if type "pip3"; then
   echo "$(tput setaf 2)Already installed pip3 ✔︎$(tput sgr0)"
 else
+  echo "Installing pip3..."
   brew install python3
 fi
 if type "pip3"; then
