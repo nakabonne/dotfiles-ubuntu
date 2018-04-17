@@ -10,6 +10,7 @@ fi
 if type "brew"; then
   brew install ripgrep
   brew install go
+  brew install fzf
 fi
 
 
