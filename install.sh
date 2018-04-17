@@ -23,3 +23,14 @@ fi
 if type "go"; then
   go get github.com/motemen/ghq
 fi
+
+
+# ghq
+if type "ghq"; then
+  echo "$(tput setaf 2)Already installed ghq ✔︎$(tput sgr0)"
+else
+  go get github.com/motemen/ghq
+fi
+if type "ghq"; then
+  ghq get https://github.com/b4b4r07/enhancd
+fi
