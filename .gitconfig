@@ -9,3 +9,5 @@
   a = add -A
   s = status
   p = push
+[core]
+	editor = nvim
