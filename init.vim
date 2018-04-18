@@ -47,7 +47,7 @@ set smartindent
 set expandtab
 set number
 set nowrap
-
+set inccommand=split
 " 拡張子ごとにインデント調整
 set tabstop=2
 set shiftwidth=2
