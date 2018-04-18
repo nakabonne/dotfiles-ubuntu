@@ -8,3 +8,4 @@
   c = commit
   a = add -A
   s = status
+  p = push
