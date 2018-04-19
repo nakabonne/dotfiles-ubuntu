@@ -21,8 +21,8 @@ eval "$(rbenv init -)"
 
 # neovim
 export XDG_CONFIG_HOME="$HOME/.config"
-export ANYENV_ROOT="/Users/nakabo/.anyenv"
-export PATH=$PATH:"/Users/nakabo/.anyenv/bin"
+export ANYENV_ROOT="$HOME/.anyenv"
+export PATH=$PATH:"$HOME/.anyenv/bin"
 eval "$(anyenv init -)"
 
 # php
