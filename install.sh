@@ -8,12 +8,15 @@ else
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 if type "brew"; then
+  brew install tmux
   brew install ripgrep
   brew install go
   brew install fzf
   brew install neovim
   brew install python3
-  brew install tmux
+  brew install rbenv
+  brew install ruby-build
+  brew install direnv
 
   brew cask install iterm2
 fi
