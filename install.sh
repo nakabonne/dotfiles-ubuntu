@@ -13,6 +13,7 @@ if type "brew"; then
   brew install fzf
   brew install neovim
   brew install python3
+  brew install tmux
 
   brew cask install iterm2
 fi
