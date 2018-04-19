@@ -5,12 +5,9 @@ fi
 export PATH=/usr/local/bin:$PATH
 
 # go_lang
-PATH="/usr/local/go/bin:$PATH"
-export PATH
-PATH="$HOME/go/bin:$PATH"
-export PATH
-GOPATH="$HOME/go"
-export GOPATH
+export PATH="/usr/local/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
+export GOPATH="$HOME/go"
 
 # python
 export PYENV_ROOT="$HOME/.pyenv"
@@ -27,6 +24,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export ANYENV_ROOT="/Users/nakabo/.anyenv"
 export PATH=$PATH:"/Users/nakabo/.anyenv/bin"
 eval "$(anyenv init -)"
+
+# php
 export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
 # openssl
@@ -40,3 +39,6 @@ export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # brew caskの保存先
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# ls
+export LSCOLORS=xbfxcxdxbxegedabagacad

@@ -14,4 +14,4 @@ PS1="\[\e[226m\e[32m\][\u: \W ]\[\e[0m\]\n\\$ "
 # alias
 alias vi='nvim'
 alias g='git'
-alias ls='ls -CF'
+alias ls='ls -CFG'
