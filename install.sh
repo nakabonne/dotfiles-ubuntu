@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # brew
+brew=("tmux" "ripgrep" "go" "fzf" "neovim" "python3" "rbenv" "ruby-build" "direnv")
+cask=("iterm2")
 if type "brew"; then
   echo "$(tput setaf 2)Already installed Homebrew ✔︎$(tput sgr0)"
 else
@@ -8,19 +10,25 @@ else
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 if type "brew"; then
-  brew install tmux
-  brew install ripgrep
-  brew install go
-  brew install fzf
-  brew install neovim
-  brew install python3
-  brew install rbenv
-  brew install ruby-build
-  brew install direnv
+  for b in ${brew[@]}; do
+    brew install $b 
+  done
+  for c in ${cask[@]}; do
+    brew cask install $c
+  done
 
-  brew cask install iterm2
 fi
 
+# git
+if type "git"; then
+  echo "$(tput setaf 2)Already installed Git ✔︎$(tput sgr0)"
+else
+  echo "Installing Git..."
+  brew install git
+fi
+if type "git"; then
+  git clone https://github.com/riywo/anyenv ~/.anyenv
+fi
 
 # go
 if type "go"; then
