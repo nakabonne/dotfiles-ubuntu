@@ -39,9 +39,6 @@ repo = 'honza/vim-snippets'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
-
-[[plugins]]
 repo = 'flazz/vim-colorschemes'
 
 [[plugins]]
@@ -60,12 +57,6 @@ hook_add = '''
 
 # カラースキーマ
 [[plugins]]
-#repo = 'jacoborus/tender.vim'
-#hook_add = '''
-#  colorscheme tender
-#  set t_Co=256¬
-#  set termguicolors
-#'''
 repo = 'tomasr/molokai'
 hook_add = '''
   colorscheme molokai
