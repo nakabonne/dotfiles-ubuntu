@@ -2,7 +2,7 @@
 if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then source "$HOME/google-cloud-sdk/path.bash.inc"; fi
 
 # enhancd
-source .ghq/github.com/b4b4r07/enhancd/init.sh
+source $HOME/.ghq/github.com/b4b4r07/enhancd/init.sh
 ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 
 # direnv
@@ -15,5 +15,6 @@ PS1="\[\e[226m\e[32m\][\u: \W ]\[\e[0m\]\n\\$ "
 alias vi='nvim'
 alias g='git'
 alias ls='ls -CFG'
+
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
