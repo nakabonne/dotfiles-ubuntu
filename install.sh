@@ -63,4 +63,5 @@ else
 fi
 if type "pip3"; then
   pip3 install neovim
+  pip3 install virtualenv
 fi
