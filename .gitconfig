@@ -10,5 +10,6 @@
   ac = !git add -A && git commit
   s = status
   p = push
+  b = branch
 [core]
 	editor = nvim
