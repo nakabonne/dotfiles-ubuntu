@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # brew
-brew=("tmux" "ripgrep" "go" "fzf" "neovim" "python3" "rbenv" "ruby-build" "direnv" "desk")
+brew=("tmux" "ripgrep" "go" "fzf" "neovim" "python3" "rbenv" "ruby-build" "direnv" "desk" "hugo")
 cask=("iterm2")
 if type "brew"; then
   echo "$(tput setaf 2)Already installed Homebrew ✔︎$(tput sgr0)"
