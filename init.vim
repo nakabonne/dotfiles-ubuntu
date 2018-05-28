@@ -86,7 +86,6 @@ set hidden
 " エイリアス
 :imap jj <Esc>
 nnoremap ; :
-nnoremap : ;
 
 " jq
 command! -nargs=? Jq call s:Jq(<f-args>)
