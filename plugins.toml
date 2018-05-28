@@ -95,6 +95,10 @@ repo = 'ctrlpvim/ctrlp.vim'
 [[plugins]]
 repo = 'yosssi/vim-ace'
 
+# solidityのシンタックスハイライト
+[[plugins]]
+repo = 'tomlion/vim-solidity'
+
 # terminal
 [[plugins]]
 repo = 'kassio/neoterm'
