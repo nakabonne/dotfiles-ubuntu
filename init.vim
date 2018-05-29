@@ -40,7 +40,7 @@ endif
 "End dein Scripts-------------------------
 
 
-
+" Basic settings--------------------------
 syntax on
 set autoindent
 set smartindent
@@ -55,7 +55,6 @@ augroup fileTypeIndent
     autocmd!
     autocmd BufNewFile,BufRead *.php setlocal tabstop=4 softtabstop=4 shiftwidth=4
 augroup END
-
 " 検索結果をハイライト
 set hlsearch
 " OSとクリップボードを共有する
@@ -83,14 +82,17 @@ set write
 " バッファ切替時ファイル保存を不要にする
 set hidden
 
-" エイリアス
+
+" alias----------------------------------------------
 :imap jj <Esc>
 nnoremap ; :
+nnoremap <C-q> <C-^>
 " ハイライト
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 nmap # <Space><Space>:%s/<C-r>///g<Left><Left>
 
-" jq
+
+" その他--------------------------------------------
 command! -nargs=? Jq call s:Jq(<f-args>)
 function! s:Jq(...)
     if 0 == a:0
