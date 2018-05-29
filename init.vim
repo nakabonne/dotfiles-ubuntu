@@ -86,6 +86,9 @@ set hidden
 " エイリアス
 :imap jj <Esc>
 nnoremap ; :
+" ハイライト
+nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
+nmap # <Space><Space>:%s/<C-r>///g<Left><Left>
 
 " jq
 command! -nargs=? Jq call s:Jq(<f-args>)
