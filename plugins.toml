@@ -105,3 +105,20 @@ repo = 'kassio/neoterm'
 hook_add = '''
   tnoremap <silent> jj <C-\><C-n><C-w>
 '''
+
+# markdown-----------------------------------------------------
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+[[plugins]]
+repo = 'kannokanno/previm'
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+hook_add = '''
+  autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
+  autocmd BufRead,BufNewFile *.md  set filetype=markdown
+  " 自動で折りたたまないようにする
+  let g:vim_markdown_folding_disabled=1
+  let g:previm_open_cmd='open -a Safari'
+  :command Po PrevimOpen
+'''
+# -------------------------------------------------------------

@@ -26,7 +26,7 @@ export PATH=$PATH:"$HOME/.anyenv/bin"
 eval "$(anyenv init -)"
 
 # php
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+#export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
 # openssl
 export PATH=/usr/local/opt/openssl/bin:$PATH
