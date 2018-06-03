@@ -84,7 +84,7 @@ set hidden
 
 
 " alias----------------------------------------------
-:imap jj <Esc>
+imap jj <Esc>
 nnoremap ; :
 nnoremap <C-q> <C-^>
 " ハイライト
