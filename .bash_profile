@@ -1,6 +1,10 @@
 if [ -f ~/.bashrc ] ; then
   . ~/.bashrc
 fi
+# 端末ごとの設定
+if [ -f ~/.bash_local ] ; then
+  . ~/.bash_local
+fi
 
 export PATH=/usr/local/bin:$PATH
 
