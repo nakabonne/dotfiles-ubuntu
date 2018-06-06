@@ -103,7 +103,9 @@ repo = 'tomlion/vim-solidity'
 [[plugins]]
 repo = 'kassio/neoterm'
 hook_add = '''
+  let g:neoterm_autoinsert = 1
   tnoremap <silent> jj <C-\><C-n><C-w>
+  nnoremap <C-t> :Tnew<CR><C-w>
 '''
 
 # markdown-----------------------------------------------------
