@@ -21,8 +21,8 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # vi mode
-set -o vi
-bind '"jj":vi-movement-mode'
+#set -o vi
+#bind '"jj":vi-movement-mode'
 
 # Hook for desk activation
 [ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
