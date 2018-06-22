@@ -19,5 +19,6 @@ $ sh ./link.sh
 
 ```
 $ cd dotfiles
+$ source .bash_profile
 $ sh ./install.sh
 ```

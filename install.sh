@@ -28,6 +28,7 @@ else
 fi
 if type "git"; then
   git clone https://github.com/riywo/anyenv ~/.anyenv
+  git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 fi
 
 # go
