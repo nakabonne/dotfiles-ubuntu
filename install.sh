@@ -66,3 +66,9 @@ if type "pip3"; then
   pip3 install neovim
   pip3 install virtualenv
 fi
+
+# curl
+cd ~/.config/nvim/
+curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+sh ./installer.sh ~/.config/nvim/
+cd ~
