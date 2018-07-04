@@ -3,8 +3,13 @@
 repo = 'cohama/lexima.vim'
 
 # 構文チェック
+#[[plugins]]
+#repo = 'scrooloose/syntastic'
 [[plugins]]
-repo = 'scrooloose/syntastic'
+repo = 'neomake/neomake'
+hook_add = '''
+  autocmd! BufWritePost * Neomake
+'''
 
 [[plugins]]
 repo = 'fatih/vim-go'
@@ -18,9 +23,14 @@ hook_add = '''
   let g:go_highlight_types = 1
   let g:go_highlight_fields = 1
 
-  let g:syntastic_mode_map = { 'mode': 'passive',
-      \ 'active_filetypes': ['go'] }
-  let g:syntastic_go_checkers = ['go', 'golint']
+"  let g:syntastic_mode_map = { 'mode': 'passive',
+"      \ 'active_filetypes': ['go'] }
+"  let g:syntastic_go_checkers = ['go', 'golint']
+  let g:neomake_go_errcheck_maker = {
+      \ 'append_file': 0,
+      \ 'errorformat': '%f:%l:%c:\ %m, %f:%l:%c\ %#%m',
+      \ }
+  let g:neomake_go_enabled_makers = ['golint', 'govet', 'errcheck']
   :command Ge GoErrCheck
   :command Gi GoImports
   :command Gc GoCallers
