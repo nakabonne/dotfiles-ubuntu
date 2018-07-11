@@ -7,6 +7,7 @@ if [ -f ~/.bash_local ] ; then
 fi
 
 export PATH=/usr/local/bin:$PATH
+export EDITOR=nvim
 
 # go_lang
 export PATH="/usr/local/go/bin:$PATH"
