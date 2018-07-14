@@ -11,5 +11,6 @@
   s = status
   p = push
   b = branch
+  co = checkout
 [core]
 	editor = nvim
