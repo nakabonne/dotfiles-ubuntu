@@ -37,7 +37,7 @@ export CPATH=/usr/local/opt/openssl/include:$LD_LIBRARY_PATH
 
 # GCP
 export CLOUDSDK_PYTHON=$(which python2)
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
+#export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # brew caskの保存先
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"

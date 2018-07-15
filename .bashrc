@@ -1,5 +1,7 @@
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then source "$HOME/google-cloud-sdk/path.bash.inc"; fi
+# 端末ごとの設定
+if [ -f ~/.bashrc_local ] ; then
+  . ~/.bashrc_local
+fi
 
 # enhancd
 source $HOME/.ghq/github.com/b4b4r07/enhancd/init.sh
