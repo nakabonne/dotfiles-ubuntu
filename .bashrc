@@ -1,4 +1,3 @@
-# 端末ごとの設定
 if [ -f ~/.bashrc_local ] ; then
   . ~/.bashrc_local
 fi
