@@ -24,6 +24,9 @@ export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# node
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # neovim
 export XDG_CONFIG_HOME="$HOME/.config"
 export ANYENV_ROOT="$HOME/.anyenv"
