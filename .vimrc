@@ -1,45 +1,3 @@
-"dein Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
-endif
-
-" Required:
-let s:dein_repo_dir = '/Users/'.$USER.'/.config/nvim/repos/github.com/Shougo/dein.vim'
-execute 'set runtimepath+='.s:dein_repo_dir
-
-" Required:
-if dein#load_state('/Users/'.$USER.'/.config/nvim/')
-  call dein#begin('/Users/'.$USER.'/.config/nvim/')
-
-  " Let dein manage dein
-  " Required:
-  call dein#add('/Users/'.$USER.'/.config/nvim/repos/github.com/Shougo/dein.vim')
-
-  " Add or remove your plugins here:
-  let s:toml = '~/.config/dein/plugins.toml'
-  call dein#load_toml(s:toml, {'lazy': 0})
-  call dein#add('zchee/deoplete-go', {'build': 'make'})
-
-  " You can specify revision/branch/tag.
-  call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
-
-  " Required:
-  call dein#end()
-  call dein#save_state()
-endif
-
-" Required:
-filetype plugin indent on
-syntax enable
-
-" If you want to install not installed plugins on startup.
-if dein#check_install()
-  call dein#install()
-endif
-
-"End dein Scripts-------------------------
-
-
 " Basic settings--------------------------
 syntax on
 set autoindent
@@ -47,7 +5,7 @@ set smartindent
 set expandtab
 set number
 set nowrap
-set inccommand=split
+"set inccommand=split
 " 拡張子ごとにインデント調整
 set tabstop=2
 set shiftwidth=2
@@ -90,15 +48,3 @@ nnoremap <C-q> <C-^>
 " ハイライト
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 nmap # <Space><Space>:%s/<C-r>///g<Left><Left>
-
-
-" その他--------------------------------------------
-command! -nargs=? Jq call s:Jq(<f-args>)
-function! s:Jq(...)
-    if 0 == a:0
-        let l:arg = "."
-    else
-        let l:arg = a:1
-    endif
-    execute "%! jq \"" . l:arg . "\""
-endfunction

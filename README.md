@@ -1,24 +1,23 @@
 # dotfiles
 
-OS X / Ubuntu dotfiles.
+Ubuntu dotfiles.
 
 ## Installation
 
 ```
-$ git clone https://github.com/nakabonne/dotfiles.git
+$ git clone git@github.com:nakabonne/dotfiles-ubuntu.git
 ```
 
 ## deploy
 
 ```
-$ cd dotfiles
+$ cd dotfiles-ubuntu
 $ sh ./link.sh
 ```
 
 ## Initialize
 
 ```
-$ cd dotfiles
-$ source .bash_profile
+$ cd dotfiles-ubuntu
 $ sh ./install.sh
 ```
