@@ -12,12 +12,12 @@ $ git clone git@github.com:nakabonne/dotfiles-ubuntu.git
 
 ```
 $ cd dotfiles-ubuntu
-$ sh ./link.sh
+$ bash ./link.sh
 ```
 
 ## Initialize
 
 ```
 $ cd dotfiles-ubuntu
-$ sh ./install.sh
+$ bash ./install.sh
 ```
