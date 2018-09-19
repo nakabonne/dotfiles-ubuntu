@@ -17,9 +17,11 @@ function promps {
         *)      TITLEBAR="";;
     esac
     local BASE="\u@\h"
-    PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}:${RED}\W${GRAY}\$(parse_git_branch)${BLUE}\$${WHITE} "
+    PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}:${RED}\W${GRAY}\$(parse_git_branch)${BLUE}\${WHITE} \[\e[0m\]\n\\$ "
 }
 promps
+
+#PS1="\[\e[226m\e[32m\][\u@"$THEIP": \W ]\[\e[0m\]\n\\$ "
 
 # alias
 alias g='git'
