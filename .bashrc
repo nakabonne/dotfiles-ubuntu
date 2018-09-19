@@ -5,6 +5,7 @@ function parse_git_branch {
 }
 function promps {
     # 色は気分で変えたいかもしれないので変す宣言しておく
+    #THEIP=$(hostname -i)
     local  BLUE="\[\e[1;34m\]"
     local  RED="\[\e[1;31m\]"
     local  GREEN="\[\e[1;32m\]"
@@ -16,12 +17,9 @@ function promps {
         *)      TITLEBAR="";;
     esac
     local BASE="\u@\h"
-    PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}:${BLUE}\W${GREEN}\$(parse_git_branch)${BLUE}\$${WHITE} "
+    PS1="${TITLEBAR}${GREEN}${BASE}${WHITE}:${RED}\W${GRAY}\$(parse_git_branch)${BLUE}\$${WHITE} "
 }
 promps
-
-#THEIP=$(hostname -i)
-#PS1="\[\e[226m\e[32m\][\u@"$THEIP": \W ]\[\e[0m\]\n\\$ "
 
 # alias
 alias g='git'
